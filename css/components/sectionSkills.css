@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.section-skills {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #0077cc;
+  color: white;
+   font-family: 'Poppins', sans-serif;
+}
+.tittle-project{
+  width: 100%;
+  height: 20vh; /* Establece una altura visible para demostrar el centrado */
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  text-align: center;      /* Centra el texto si es multilinea */
+  flex-direction: column;  /* Apila los textos uno 
+  bacdebajo del otro */
+}
+.tittle-project h2{
+    margin-top: 5rem;
+    font-size: 2rem;
+}
+
+
+.technologies {
+  width: 100%;
+  min-height: 80vh; /* en lugar de height fija */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* reemplaza el gap gigante por algo más razonable */
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow: hidden; /* evita que se desborde hacia afuera */
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0,0,0,.8);
+  border-radius: 12px;
+  margin-top: -1rem;
+  padding: 0.5rem 1rem;
+  max-width: 120px;
+  flex: 1 1 100px; /* asegura que se ajusten bien en pantallas pequeñas */
+}
+
+.skill img {
+  width: 100px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  border-radius: 12px;
+  padding: 0.7rem;
+}
+.skill img:hover {
+  transform: scale(1.2) rotate(1deg); /* aumenta tamaño y gira ligeramente */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* sombra suave */
+  cursor: pointer; /* cambia el cursor */
+}
+
+
+@media (max-width: 768px) {
+  .technologies {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .skill {
+    max-width: 100px;
+    flex: 1 1 80px;
+  }
+}
+
+

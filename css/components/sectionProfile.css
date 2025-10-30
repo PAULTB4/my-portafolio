@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
+}
+#hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  background-color: black;
+  color: white;
+}
+
+.container-profile {
+  position: relative; /* Muy importante para quedar por encima del fondo */
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 85%;
+}
+
+
+.ful-name {
+  flex: 3;
+  min-width: 280px;
+}
+
+.ful-name .name {
+  font-size: 1rem;
+  color: #0077cc;
+}
+
+.ful-name p {
+  font-size: 2.5rem;
+  color: white;
+  margin: 0;
+}
+
+.ful-name h1 {
+  font-size: 3.5rem;
+  margin: 0;
+  color: white;
+}
+
+.ful-name h4 {
+  font-size: 1.5rem;
+  color: white;
+  margin: 15px 0;
+  line-height: 1.4;
+}
+
+.ful-name button {
+  margin-right: 15px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: solid 1px white;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+ .btn-ver{
+  background-color: #1E90FF;
+  color: white;
+}
+.descargar-cv{
+  background:black;
+  color: white;
+}
+
+
+.ful-name i {
+  margin-right: 8px;
+}
+.image-container {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  overflow: hidden;
+  margin-left: 9rem;
+}
+
+
+
+.image-container .organic-shape {
+  position: absolute;
+  width: 300px;
+  height: 380px; /* Más alto, cubre desde la cintura */
+  background: linear-gradient(135deg, #1E90FF, #004488);
+  border-radius: 50% 60% 45% 55% / 55% 60% 45% 55%;
+  animation: shapePulse 8s ease-in-out infinite;
+  z-index: 0;
+}
+
+.image-container img.recorte {
+  width: 280px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 50% 60% 45% 55% / 55% 60% 45% 55%; /* Misma forma que el fondo */
+  z-index: 1;
+  position: relative;
+  box-shadow: none; /* Sin sombra para evitar borde visible */
+  background-color: transparent;
+}
+
+/* Animación fluida */
+@keyframes shapePulse {
+  0%, 100% {
+    border-radius: 50% 60% 45% 55% / 55% 60% 45% 55%;
+  }
+  50% {
+    border-radius: 60% 45% 50% 60% / 60% 50% 60% 40%;
+  }
+}
+
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  height: 45vh;
+  width: 100%;
+  z-index: 1;
+}
+
+
+@media (max-width: 768px) {
+.wave {
+  position: absolute;
+  bottom: 0;
+  height: 20vh;
+  width: 100%;
+  z-index: 1;
+}
+}
+
+

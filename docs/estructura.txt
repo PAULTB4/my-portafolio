@@ -1,0 +1,21 @@
+/portfolio
+│
+├── index.html            # Página principal
+├── /assets               # Carpeta para imágenes, íconos, y otros recursos estáticos
+│   ├── /images           # Carpeta de imágenes
+│   ├── /icons            # Carpeta de íconos
+│   └── /fonts            # Fuentes personalizadas
+├── /css                  # Carpeta para archivos de estilo
+│   ├── main.css          # Estilos globales
+│   ├── reset.css         # Archivo para resetear estilos por defecto (opcional)
+│   └── /components       # Estilos específicos de componentes
+├── /js                   # Carpeta para scripts JavaScript
+│   ├── main.js           # Lógica general de la página
+│   └── /components       # Lógica de componentes específicos
+├── /partials             # Carpeta para fragmentos HTML reutilizables
+│   ├── header.html       # Cabecera del sitio
+│   ├── footer.html       # Pie de página del sitio
+│   └── navbar.html       # Barra de navegación (si la utilizas como componente separado)
+└── /docs                 # Documentación (opcional)
+    └── README.md         # Explicación del proyecto
+

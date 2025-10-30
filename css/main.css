@@ -1,0 +1,22 @@
+#navbar {
+  position: sticky;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  background-color: #444;
+  z-index: 3;
+}
+
+#section1,
+#section2,
+#section3 {
+  height: 100vh;
+  min-height: 500px;
+  width: 100%;
+}
+
+#footer {
+  height: 100px;
+  width: 100%;
+  background-color: #111;
+}
